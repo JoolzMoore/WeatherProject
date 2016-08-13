@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    color: #dddddd;
+    margin: 2px 15px;
+    letter-spacing: 1px;
+
+}
+.container {
+  margin: 3px 15px;
+  max-width: 100%;
+  text-decoration: none;
+
+}
+.nav-bar {
+  list-style-type: none;
+}
+.nav-bar:after {
+  content: '';
+  clear: both;
+}
+.nav-bar li {
+  float: left;
+  margin: 30px 5px;
+}
+.nav-bar li a {
+  text-decoration: none;
+  color: #f7941e;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+}
+.nav-bar li a:hover,
+.nav-bar li a:active {
+  color: #cccccc;
+}
+.nav-bar li a:after {
+  margin-left: 9px;
+  color: #fcf0a0;
+  content: '|';
+}
+.nav-bar li:last-child a:after {
+  content: '';
+}
+.logo {
+  padding: 5px;
+}
+
+h3 {
+letter-spacing: 2px;
+}
