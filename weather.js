@@ -15,11 +15,11 @@ function loadWeather(location, woeid) {
         woeid: woeid,
         unit: 'c',
         success: function(weather) {
-            city = weather.city;
-            temp = weather.temp + '&deg;';
+            temp = '<h5>temp Celcius  humidity  windspeed</h5>' + weather.temp + '&deg;';
+            city = weather.city ;
             wcode = '<img class = "weathericon" src="views/weathericons/' + weather.code + '.svg">';
             wind = '<p>' + weather.wind.speed + '</p><p>' + weather.units.speed + '</p>';
-            humidity = weather.humidity + ' %';
+            humidity = weather.humidity + '%';
 
             //target classes
             $(".location").text(city);
