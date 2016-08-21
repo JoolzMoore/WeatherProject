@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="views/standardize.css">
     <link rel="stylesheet" href="views/index.css">
     <script source="carousel.js"></script>
+
     <!-- Mobile specific meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
@@ -19,45 +20,15 @@
 
 <body>
     <!-- Navigation-->
-            <div class="three columns">
+            <div class="two columns">
                 <a href="../index.html"><img src="views/metvuw_logo_sm.png" width="100%" alt="positional" class="logo"> </a>
             </div>
-            <div class="nine columns">
-                <ul class="nav-bar">
-                    <li><a class="nav_ul" href="#" href="../index.html#current-anchor">CURRENT</a></li>
-                    <li><a class="nav_ul" href="#" href="../index.html#blog-anchor">SATELLITE</a></li>
-                    <li><a class="nav_ul" href="# " href="../index.html#radar-anchor ">RADAR</a></li>
-                    <li><a class="nav_ul" href="#" href="../index.html#air-anchor">UPPER AIR</a></li>
-                    <li><a class="nav_ul" href="#" href="../index.html#contact-anchor">OCEAN</a></li>
-                    <li><a class="nav_ul" href="#" href="../index.html#forecast-anchor">FORECAST</a></li>
-                </ul>
+            <div class="ten columns">
+                <button id="prev" PREVIOUS>
+                <button id="next" NEXT>
             </div>
 
 
-
-
-
-    <div id="cycler">
-        <img class="active" src="image1.jpg" alt="My image" />
-        <img src="views/image2.jpg" alt="forecastOfDay-date" />
-        <div class="row">
-              <h4>
-                Forecast issued at: date/time
-              </h4>
-        </div>
-        <img src="views/image3.jpg" alt="forecastOfDay-date2" />
-        <div class="row">
-              <h4>
-                Forecast issued at: date/time
-              </h4>
-        </div>
-        <img src="views/image4.jpg" alt="forecastOfDay-date3" />
-        <div class="row">
-              <h4>
-                Forecast issued at: date/time
-              </h4>
-        </div>
-    </div>
     </div>
         <div class="body page-index clearfix">
               <div class="container clearfix">
@@ -76,12 +47,12 @@
         </div>
         <div class="footer">
             <hr>
-            <p>The data on these pages are provided with no guarantees as to their accuracy or timeliness, reliability will decline with the length of the forecast. They are not intended for use in making life or death decisions, or decisions relating to
+            <p>The data on these pages are provided with no guarantee as to the accuracy or timeliness. Reliability will decline with the length of the forecast. They are not intended for use in making life or death decisions, or decisions relating to
                 the protection of property.</p>
         </div>
         </body>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
-        <script src="js/weather.js"></script>
+        <script src="weather.js"></script>
 
 </html>
