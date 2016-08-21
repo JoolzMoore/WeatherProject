@@ -1,3 +1,24 @@
+* {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+#landing-page {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
   body {
   background-color: black;
   margin: 2px 15px;
@@ -13,17 +34,32 @@
 
 }
 .nav-bar {
+  display: flex;
   list-style-type: none;
+  background-attachment:fixed;
+}
+
+.nav_ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
 }
 .nav-bar:after {
+  display: flex;
   content: '';
   clear: both;
 }
 .nav-bar li {
+  display: flex;
+  width: 60px;
   float: left;
   margin: 30px 5px;
 }
 .nav-bar li a {
+  display: flex;
+  text-align: center;
   text-decoration: none;
   color: #f7941e;
   font-size: 1.5rem;
@@ -49,10 +85,24 @@ h3 {
 letter-spacing: 2px;
 }
 
+hr {
+    display: block;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    color: grey;
+}
 
+p {
+  font-size: 0.1em;
+  font-weight: lighter;
+  color: grey;
+}
 
-
-/*info box*/
+/*climate info box*/
 .info_bg p {
   margin-bottom: -.2em;
 }
@@ -90,7 +140,7 @@ letter-spacing: 2px;
   height: 208px;
   margin: auto;
   border-radius: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: grey;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   opacity: 0.8;
 }
@@ -116,7 +166,7 @@ letter-spacing: 2px;
   min-height: 24px;
   margin: 0 auto;
   font: 0.625em/1.38 'Trebuchet MS';
-  color: rgb(0, 0, 0);
+  color: grey;
 }
 
 .humidity {
@@ -154,7 +204,7 @@ letter-spacing: 2px;
   font-weight: 400;
   line-height: 1.38;
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .temperature {
@@ -167,7 +217,7 @@ letter-spacing: 2px;
   font-size: 4.25em;
   font-weight: 700;
   line-height: 1.38;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .windicon {
@@ -190,7 +240,7 @@ letter-spacing: 2px;
   font-size: 1em;
   line-height: 1.38;
   text-align: center;
-  color: #ffffff;
+  color: grey;
 }
 
 .windspeed p {
