@@ -12,8 +12,8 @@
     box-sizing: inherit;
   }
 
-#landing-page {
-    position: fixed;
+#button {
+    position: flex;
     left: 0;
     top: 0;
     width: 100%;
@@ -43,7 +43,6 @@
 .forecastImg {
     width: 100%;
     height: auto;
-    opacity: 0.3;
 }
 
 .logo {
@@ -54,22 +53,18 @@ h3 {
 letter-spacing: 2px;
 }
 
-hr {
-    display: block;
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-    color: grey;
+h5 {
+font-size: 12px;
+letter-spacing: 2px;
+color: grey;
 }
 
+
 p {
-  font-size: 0.1em;
-  font-weight: lighter;
-  color: grey;
+  font-size: .5em;
+  color: white;
 }
+
 
 /*climate info box*/
 .info_bg p {
@@ -99,7 +94,7 @@ p {
 }
 
 .container {
-  position: absolute;
+  position: absolute;;
   top: 0;
   bottom: 0;
   left: 0;
@@ -177,7 +172,7 @@ p {
 }
 
 .temperature {
-  position: absolute;
+  position: absolute;;
   top: 38px;
   left: 72px;
   z-index: 7;
@@ -191,9 +186,8 @@ p {
 
 .windicon {
   display: block;
-  position: absolute;
   top: 5px;
-  left: 43.1173312883%;
+  left: 50px;
   z-index: 1;
   width: 50px;
   height: auto;
@@ -202,16 +196,15 @@ p {
 
 .windspeed {
   position: absolute;
-  top: 9px;
+  top: 20px;
   left: 109px;
   width: 50px;
-  min-height: 29px;
-  font-size: 1em;
+  min-height: 45px;
+  font-size: 1.5em;
   line-height: 1.38;
   text-align: center;
-  color: grey;
+  color: white;
 }
 
 .windspeed p {
-  margin-bottom: -.2em;
 }
